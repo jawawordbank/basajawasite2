@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link href="/src/style.css" rel="stylesheet">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Jawa Word Bank</title>
+</head>
+<body>
+<div id="navbar"></div>
+<!-- table -->
+<div class="w-full m-8 mx-auto rounded-box border border-base-content/5 bg-base-100">
+  <div class="overflow-x-auto rounded-box">
+    <table class="table table-pin-rows" id="results">
+      <!-- head -->
+      <thead>
+      <tr>
+        <th>Tembung</th>
+        <th>Ngoko</th>
+        <th>Krama</th>
+        <th>Krama Inggil</th>
+        <th>Cathetan</th>
+      </tr>
+      </thead>
+      <tbody id="table-body">
+      <!-- Rows will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer class="footer sm:footer-horizontal footer-center bg-base-100 text-base-content p-4">
+  <aside>
+    <p>❗️NOT a dictionary, may be inaccurate❗️</p>
+  </aside>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
